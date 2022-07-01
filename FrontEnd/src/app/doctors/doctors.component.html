@@ -1,0 +1,17 @@
+<div *ngFor="let doctor of doctors">
+    <section class="doctor-section">
+    <h1> DOKTORLAR </h1>
+    <div class="doctor-container">
+        <div class="doctor-card">
+            <div class="doctor-card-top">
+                <img src="../../assets/profileImage.jpeg" alt="">
+                <h2>{{doctor.name}} {{doctor.surname}}</h2>
+            </div>
+            <div class="doctor-card-body">
+                <span>{{doctor.email}}</span>
+                <span>{{doctor.phoneNumber}}</span>
+            </div>
+        </div>
+    </div>
+</section>
+</div>

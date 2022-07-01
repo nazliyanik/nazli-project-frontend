@@ -1,0 +1,88 @@
+<div class="flex justify-center">
+    <div class="mb-3 xl:w-96">
+        <label>Şehirler</label>
+    <select 
+    #mySelect
+    (change)='onOptionsSelected(mySelect.value)'
+    class="form-select appearance-none
+          block
+          w-full
+          px-3
+          py-1.5
+          text-base
+          font-normal
+          text-gray-700
+          bg-white bg-clip-padding bg-no-repeat
+          border border-solid border-gray-300
+          rounded
+          transition
+          ease-in-out
+          m-0
+          focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" aria-label="Default select example
+          ">
+        <option [value]="city.id" *ngFor="let city of cities">{{city.cityName}}</option>
+    </select>
+    <label>Hastaneler</label>
+    <select 
+    #mySelectHost
+    (change)='onOptionsHospital(mySelectHost.value)'
+    class="form-select appearance-none
+          block
+          w-full
+          px-3
+          py-1.5
+          text-base
+          font-normal
+          text-gray-700
+          bg-white bg-clip-padding bg-no-repeat
+          border border-solid border-gray-300
+          rounded
+          transition
+          ease-in-out
+          m-0
+          focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" aria-label="Default select example">
+        <option  [value]="hospital.id" *ngFor="let hospital of selectedHospitals">{{hospital.hospitalName}}</option>
+    </select>
+    <label>Kategoriler</label>
+    <select 
+    #mySelectDoc
+    (change)='onOptionsDoctor(mySelectDoc.value)'
+    class="form-select appearance-none
+              block
+              w-full
+              px-3
+              py-1.5
+              text-base
+              font-normal
+              text-gray-700
+              bg-white bg-clip-padding bg-no-repeat
+              border border-solid border-gray-300
+              rounded
+              transition
+              ease-in-out
+              m-0
+              focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+        aria-label="Default select example">
+        <option [value]="department.id" *ngFor="let department of selectedDepartments">{{department.departmentName}}</option>
+    </select>
+    <label>Doktorlar</label>
+    <select class="form-select appearance-none
+                  block
+                  w-full
+                  px-3
+                  py-1.5
+                  text-base
+                  font-normal
+                  text-gray-700
+                  bg-white bg-clip-padding bg-no-repeat
+                  border border-solid border-gray-300
+                  rounded
+                  transition
+                  ease-in-out
+                  m-0
+                  focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+        aria-label="Default select example">
+        <option *ngFor="let doctor of selectedDoctor">{{doctor.name}} {{doctor.surname}}</option>
+    </select>
+    </div>
+</div>

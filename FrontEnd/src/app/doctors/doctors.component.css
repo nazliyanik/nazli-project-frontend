@@ -1,0 +1,42 @@
+.doctor-container {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 50px;
+    column-gap: 30px;
+    text-align: center;
+
+
+        
+}
+        .doctor-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--black-900);
+            color: var(--grey);
+        }
+                .doctor-card-top>img {
+                    max-width: 100%;
+                    max-height: 100%;
+                    object-fit: cover;
+                }
+.doctor-card-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.doctor-section {
+    padding: 10px;
+}
+
+.doctor-section > h1 {
+    text-align: center;
+        font-size: 3rem;
+        font-weight: bold;
+        border-bottom: 4px solid var(--black-900);
+}

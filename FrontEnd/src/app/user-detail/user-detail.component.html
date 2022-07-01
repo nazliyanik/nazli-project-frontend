@@ -1,0 +1,32 @@
+<div class="flex flex-col justify-center items-start gap-1 "  *ngFor="let userDet of userDetail">
+  <div class="bg-slate-100 rounded-md p-3 w-full mt-1 text-center">
+    <span><i class="fa-solid fa-user"></i></span>
+    <span> Kullanıcı Profil Detayı</span>
+  </div>
+  <div class="bg-slate-100 rounded-md p-3 w-full ">
+    <span><i class="fa-solid fa-droplet"></i></span>
+    <span> Blood Type: {{userDet.bloodType}} </span>
+  </div>
+  <div class="bg-slate-100 rounded-md p-3 w-full ">
+    <span><i class="fa-solid fa-envelope"></i></span>
+    <span> Email:{{userDet.email}} </span>
+  </div>
+  <div class="bg-slate-100 rounded-md p-3  w-full">
+    <span> <i class="fa-solid fa-address-card"></i></span>
+    <span> TC No: {{userDet.identityNumber}}</span>
+  </div>
+  <div class="bg-slate-100 rounded-md p-3 w-full">
+    <span>  <i class="fa-solid fa-person"></i></span>
+    <span> Full name: {{userDet.name}} {{userDet.surname}}</span>
+  </div>
+  <div class="bg-slate-100 rounded-md p-3  w-full">
+    <span>  <i class="fa-solid fa-phone"></i></span>
+    <span> Phone: {{userDet.phoneNumber}} </span>
+  </div>
+</div>
+
+
+<!-- 
+    surname 
+    departmend id 
+ -->

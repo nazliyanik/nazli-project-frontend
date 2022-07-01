@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+    /* Fonts */
+    --font: 'Roboto', sans-serif;
+    --font-2: 'Mochiy Pop P One', sans-serif;
+    ;
+    --font-3: 'Poppins', sans-serif;
+    /* colors */
+    --black-900: #222831;
+    --black-800: #393E46;
+    --grey: #EEEEEE;
+    --teal: #00ADB5;
+}
